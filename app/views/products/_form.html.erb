@@ -1,0 +1,19 @@
+<div class="container">
+<%= simple_form_for(@product) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs col-lg-6">
+    <%= f.input :product %>
+    <%= f.input :ownbyalahra %>
+    <%= f.input :other %>
+    <%= f.input :isDishdash %>
+    <%= f.input :price %>
+    <%= f.input :isActive %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+</div>

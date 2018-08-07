@@ -1,0 +1,15 @@
+
+image: ruby:2.4.0
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - bundler
+        script: # Modify the commands below to build your repository.
+          - bundle install
+          - git push https://heroku:1561473c-ae84-4a91-add1-b2f6af4f76ca@git.heroku.com/aladhrapp.git HEAD
+
+definitions:
+  caches:
+    bundler: ./vendor

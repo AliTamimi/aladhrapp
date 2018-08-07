@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product: MyString
+  ownbyalahra: false
+  other: false
+  isDishdash: false
+  price: 1.5
+  isActive: false
+  user: one
+
+two:
+  product: MyString
+  ownbyalahra: false
+  other: false
+  isDishdash: false
+  price: 1.5
+  isActive: false
+  user: two

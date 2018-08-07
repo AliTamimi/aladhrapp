@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @product.product %>
+</p>
+
+<p>
+  <strong>Ownbyalahra:</strong>
+  <%= @product.ownbyalahra %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @product.other %>
+</p>
+
+<p>
+  <strong>Isdishdash:</strong>
+  <%= @product.isDishdash %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>Isactive:</strong>
+  <%= @product.isActive %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @product.user.name %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
